@@ -241,7 +241,7 @@
 	        for (var i = 0, ln = localStorage.length; i < ln; i++) {
 	            var key = localStorage.key(i),
 	                keyNum = parseInt(key);
-	            if (Number.isNaN(keyNum)) continue;
+	            if (isNaN(keyNum)) continue;
 	            MyApp.localStorageData.push(JSON.parse(localStorage.getItem(key)));
 	        }
 	        MyApp.localStorageData = MyApp.localStorageData.sort(function(a, b) {
